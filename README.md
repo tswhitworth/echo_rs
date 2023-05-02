@@ -40,7 +40,7 @@ To verify the consistency between the two utilities, a bash script is employed t
 
 Subsequently, the output of ***echo_rs*** is compared to the saved output from OpenBSD's ***echo*** to confirm their similarity.
 
-###### output.sh
+###### [output.sh](https://github.com/tswhitworth/echo_rs/blob/master/tests/expected/output.sh)
 ```bash
 #!/usr/bin/env bash
 
@@ -53,7 +53,7 @@ echo -n "Hello there" > $OUTDIR/hello1.n.txt
 echo -n "Hello" "there" > $OUTDIR/hello2.n.txt
 ```
 
-###### cli.sh (testing file)
+###### [cli.sh](https://github.com/tswhitworth/echo_rs/blob/master/tests/cli.rs) (testing file)
 ```rust
 #[test]
 fn matches_echos_output1() -> TestResult {
