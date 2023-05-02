@@ -96,3 +96,18 @@ fn run(args: &[&str], expected_file: &str) -> TestResult {
     Ok(())
 }
 ```
+###### Running the tests
+```bash
+$ cargo test
+...
+running 8 tests
+test matches_echos_output1 ... ok
+test no_args ... ok     
+test omit_newline ... ok
+test matches_echos_output1_no_newline ... ok
+test multiple_word_output ... ok
+test matches_echos_output2 ... ok
+test matches_echos_output2_no_newline ... ok
+test single_word_output ... ok
+
+```
