@@ -21,9 +21,9 @@ fn main() {
        )
        .get_matches();
 
-    let text = matches.values_of_lossy("text").unwrap();
+    let text = matches.values_of("text").unwrap().collect::<Vec<&str>>();
     let omit_newline = matches.is_present("omit_newline");
     let ending = if omit_newline { "" } else { "\n" };
 
-    println!("{}{}", text.join(" "), ending);
+    print!("{}{}", text.join(" "), ending);
 }
