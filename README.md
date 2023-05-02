@@ -53,7 +53,7 @@ echo -n "Hello there" > $OUTDIR/hello1.n.txt
 echo -n "Hello" "there" > $OUTDIR/hello2.n.txt
 ```
 
-###### [cli.sh](https://github.com/tswhitworth/echo_rs/blob/master/tests/cli.rs) (testing file)
+###### [cli.rs](https://github.com/tswhitworth/echo_rs/blob/master/tests/cli.rs) (testing file)
 ```rust
 #[test]
 fn matches_echos_output1() -> TestResult {
